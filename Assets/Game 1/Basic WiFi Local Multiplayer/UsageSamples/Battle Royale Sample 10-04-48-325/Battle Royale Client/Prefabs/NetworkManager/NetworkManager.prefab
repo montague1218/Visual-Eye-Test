@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1016496770262530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4454269385441044}
+  - component: {fileID: 114349802884120114}
+  - component: {fileID: 114773206086350018}
+  - component: {fileID: 114069520159320018}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4454269385441044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016496770262530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -179.77759, y: -139.82983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114349802884120114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016496770262530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1648cc27fbbf3df42b4b4a8b96a177be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onLogged: 0
+  myPlayer: {fileID: 0}
+  myId: 
+  local_player_id: 
+  localPlayersPrefabs:
+  - {fileID: 1170871466074830, guid: 93f299516a963d6409089eabf96c64e3, type: 3}
+  networkPlayerPrefabs:
+  - {fileID: 1041371033978396, guid: 7b0ed47ffe3c37b4b92ea25d6abf9938, type: 3}
+  spawnPoints:
+  - {fileID: 0}
+  camRigPref: {fileID: 1898879260866386, guid: 541e6decb2dd6454ab94b3b99c439156, type: 3}
+  camRig: {fileID: 0}
+  serverPort: 3310
+  clientPort: 3000
+  tryJoinServer: 0
+  waitingAnswer: 0
+  serverFound: 0
+  waitingSearch: 0
+  gameIsRunning: 0
+  maxReconnectTimes: 10
+  contTimes: 0
+  maxTimeOut: 60
+  timeOut: 0
+--- !u!114 &114773206086350018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016496770262530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11c003938fbac64c8b765f5884e77e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serverSocketPort: 0
+  udpServerState: 0
+  pack: []
+  serverHostName: 
+  serverPort: 3310
+  tryCreateServer: 0
+  waitingAnswer: 0
+  serverRunning: 0
+  onlinePlayers: 0
+  maxTimeOut: 60
+  cont: 0
+--- !u!114 &114069520159320018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016496770262530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1367f117f55610d44933461d7efa19ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  udpSocketState: 0
+  serverIP: 
+  noNetwork: 0
+  localNetworkIP: 
